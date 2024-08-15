@@ -1,0 +1,122 @@
+.container {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 95%;
+  font-size: calc(1vw + 0.40vh + 0.40em);
+}
+
+h2 {
+  text-align: center;
+  font-size: calc(1.5vw + 0.60vh + 0.60em);
+  margin-bottom: 2%;
+}
+
+.list-group-item {
+  background-color: rgb(249, 249, 249);
+  border: 1px solid rgb(224, 224, 224);
+  margin-bottom: 1.5%;
+  padding: 2%;
+  border-radius: 5px;
+}
+
+.list-group-item h4 {
+  color: rgb(40, 40, 40);
+  font-size: calc(1.2vw + 0.45vh + 0.45em);
+}
+
+.list-group-item p {
+  color: rgb(80, 80, 80);
+  margin-bottom: 1%;
+  font-size: calc(1vw + 0.35vh + 0.35em);
+}
+
+.btn-group .btn {
+  margin-right: 1%;
+  font-size: calc(0.9vw + 0.35vh + 0.35em);
+}
+
+.btn-primary {
+  background-color: rgb(64, 129, 233);
+  border-color: rgb(64, 129, 233);
+}
+
+.btn-primary:hover {
+  background-color: rgb(54, 119, 223);
+  border-color: rgb(54, 119, 223);
+}
+
+.btn-info {
+  background-color: rgb(90, 170, 250);
+  border-color: rgb(90, 170, 250);
+}
+
+.btn-info:hover {
+  background-color: rgb(80, 160, 240);
+  border-color: rgb(80, 160, 240);
+}
+
+.alert {
+  margin-top: 2%;
+  font-size: calc(1vw + 0.35vh + 0.35em);
+  padding: 1.5%;
+}
+
+.text-muted {
+  color: rgb(150, 150, 150);
+}
+
+select.form-control {
+  font-size: calc(0.9vw + 0.35vh + 0.35em);
+  margin-top: 1%;
+}
+
+select.form-control option {
+  font-size: calc(0.9vw + 0.35vh + 0.35em);
+}
+
+.problem-wrapper {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  width: 95%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: calc(1vw + 0.40vh + 0.40em);
+}
+
+.problem-content {
+  margin-left: 5%;
+  margin-top: 2%;
+  width: 100%;
+  overflow: auto;
+  min-height: 20vh;
+  display: block;
+}
+
+a {
+  color: rgb(64, 129, 233);
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(59, 127, 238);
+}
+
+a:hover {
+  color: rgb(54, 119, 223);
+}
+
+tr {
+  background-color: rgb(249, 249, 249);
+}
+
+td {
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-bottom: 2vh;
+}
+
+label {
+  min-width: 50%;
+}

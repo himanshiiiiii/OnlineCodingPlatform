@@ -1,0 +1,46 @@
+<app-navbar></app-navbar>
+<div class="container">
+
+  <!-- Display loading message -->
+  <div *ngIf="isLoading">Loading contests...</div>
+
+  <!-- Display error message -->
+  <div *ngIf="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
+
+  <!-- Dropdown to select contest ID -->
+  <div *ngIf="!isLoading && contests.length > 0" class="form-group">
+    <label for="contestSelect">Select Contest:</label>
+    <select
+      id="contestSelect"
+      class="form-control"
+
+    >
+      <option *ngFor="let contest of contests" [value]="contest._id">
+        {{ contest.contestName }}
+      </option>
+    </select>
+  </div>
+
+  <!-- Buttons to trigger actions -->
+  <div class="btn-group mt-3">
+    <button class="btn btn-primary" (click)="register(selectedContestId)">Register</button>
+    <button class="btn btn-info" (click)="viewLeaderboard(selectedContestId)">View Leaderboard</button>
+    <button class="btn btn-secondary" (click)="changeStatus(selectedContestId, 'ongoing')">Mark as Ongoing</button>
+    <button class="btn btn-secondary" (click)="changeStatus(selectedContestId, 'completed')">Mark as Completed</button>
+  </div>
+
+  <!-- Display list of contests -->
+  <ul *ngIf="!isLoading && contests.length > 0" class="list-group mt-4">
+    <li *ngFor="let contest of contests" class="list-group-item">
+      <h4>{{ contest.contestName }}</h4>
+      <p>{{ contest.description }}</p>
+      <p><strong>Status:</strong> {{ contest.status }}</p>
+      <p><strong>Start Date:</strong> {{ contest.startDate | date }}</p>
+      <p><strong>End Date:</strong> {{ contest.endDate | date }}</p>
+      <span *ngIf="!contest.registrationOpen" class="text-muted">Registration closed</span>
+    </li>
+  </ul>
+
+  <!-- Display message if no contests are available -->
+  <div *ngIf="!isLoading && contests.length === 0">No contests available at the moment.</div>
+</div>

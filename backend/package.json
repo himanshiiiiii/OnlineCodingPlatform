@@ -1,0 +1,23 @@
+{
+  "name": "index",
+  "version": "1.0",
+  "description": "Code-Platform Backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Vinayak Sharma",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "child_process": "^1.0.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.5.2",
+    "nodemon": "^2.0.14",
+    "timer": "^1.0.1"
+  }
+}
